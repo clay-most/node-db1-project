@@ -36,8 +36,8 @@ router.post("/", async (req, res, next) => {
     next();
   }
 });
-// get by id
 
+// get by id
 router.get("/:id", async (req, res, next) => {
   try {
     const accounts = await db
@@ -72,6 +72,7 @@ router.put("/:id", async (req, res, next) => {
     next();
   }
 });
+
 // delete
 router.delete("/:id", async (req, res, next) => {
   try {
